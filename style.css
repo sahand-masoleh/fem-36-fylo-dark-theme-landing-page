@@ -4,4 +4,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: hsl(0deg, 0%, 100%);
+}
+
+body {
+  background-color: hsl(218deg, 28%, 13%);
+  padding: 5rem min(5%, 3rem);
+}
+
+.image__svg {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nav {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: min(5%, 3rem);
+  margin-bottom: 5rem;
+}
+.nav__logo {
+  margin-right: auto;
+  height: 3rem;
+}
+.nav__link {
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */

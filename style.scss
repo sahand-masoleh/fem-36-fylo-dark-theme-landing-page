@@ -15,8 +15,42 @@ $c-a-error: hsl(0, 100%, 63%);
 
 $c-n: hsl(0, 0%, 100%);
 
+$max-width: 80rem;
+$gap: min(5%, 3rem);
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: $c-n;
+}
+
+body {
+	background-color: $c-p-main;
+	padding: 5rem $gap;
+}
+
+.image {
+	&__svg {
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.nav {
+	max-width: $max-width;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: $gap;
+	margin-bottom: 5rem;
+
+	&__logo {
+		margin-right: auto;
+		height: 3rem;
+	}
+
+	&__link {
+		font-family: $ff-body;
+	}
 }
