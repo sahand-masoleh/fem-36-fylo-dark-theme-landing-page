@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400..700;1,400..700&display=swap");
+$ff-headings: "Raleway", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&display=swap");
+$ff-body: "Open Sans", sans-serif;
+
+$c-p-intro-n-sign-up: hsl(217, 28%, 15%);
+$c-p-main: hsl(218, 28%, 13%);
+$c-p-footer: hsl(216, 53%, 9%);
+$c-p-testimonials: hsl(219, 30%, 18%);
+
+$c-a-gradient1: hsl(176, 68%, 64%);
+$c-a-gradient2: hsl(198, 60%, 50%);
+$c-a-error: hsl(0, 100%, 63%);
+
+$c-n: hsl(0, 0%, 100%);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
