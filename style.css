@@ -411,6 +411,19 @@
     gap: 1.5rem;
   }
 }
+.tag__email-wrapper {
+  width: 100%;
+  position: relative;
+}
+.tag__error {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  color: hsl(0deg, 100%, 63%);
+  left: min(5%, 3rem);
+  transform: translateY(100%);
+  bottom: -0.5ch;
+}
 .tag__email {
   all: unset;
   box-sizing: border-box;
@@ -418,6 +431,9 @@
   border-radius: 50px;
   padding: 1.5ch min(5%, 3rem);
   width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  text-align: left;
 }
 @media screen and (max-width: 480px) {
   .tag__email {
@@ -427,19 +443,16 @@
 .tag__email::-moz-placeholder {
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
-  text-align: left;
   opacity: 0.3;
 }
 .tag__email:-ms-input-placeholder {
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
-  text-align: left;
   opacity: 0.3;
 }
 .tag__email::placeholder {
   font-family: "Raleway", sans-serif;
   font-size: 0.8rem;
-  text-align: left;
   opacity: 0.3;
 }
 @media screen and (max-width: 480px) {
@@ -533,6 +546,10 @@
 .footer__item {
   font-family: "Open Sans", sans-serif;
 }
+.footer__item:hover {
+  cursor: pointer;
+  color: #f0f0f0;
+}
 .footer__social-container {
   display: flex;
   gap: 1ch;
@@ -567,6 +584,7 @@
 .footer__attribution {
   flex-basis: 100%;
   font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
   color: #d9d9d9;
 }
 .footer__attribution a {

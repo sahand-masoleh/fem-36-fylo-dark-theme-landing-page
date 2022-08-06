@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 
@@ -100,11 +101,14 @@
       <h2 class="tag__title">Get early access today</h2>
       <p class="tag__text">It only takes a minute to sign up and our free starter tier is extremely generous. If you
         have any questions, our support team would be happy to help you.</p>
-      <div class="tag__signup">
-        <input type="email" class="tag__email" placeholder="email@example.com">
-        <button class="tag__button">Get Started For
+      <form class="tag__signup" id="form" novalidate>
+        <div class="tag__email-wrapper">
+          <input type="email" name="email" class="tag__email" id="input" placeholder="email@example.com">
+          <p class="tag__error" id="error" hidden>Please enter a valid email address</p>
+        </div>
+        <button type="submit" class="tag__button" id="button">Get Started For
           Free</button>
-      </div>
+      </form>
     </section>
   </main>
 
