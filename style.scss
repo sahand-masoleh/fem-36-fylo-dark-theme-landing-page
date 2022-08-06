@@ -48,6 +48,7 @@ $gap: min(5%, 3rem);
 	height: 10rem;
 	background-color: $c-p-intro-n-sign-up;
 	margin: 0 auto;
+	padding: 0 $gap;
 	display: flex;
 	align-items: center;
 	gap: $gap;
@@ -70,6 +71,7 @@ $gap: min(5%, 3rem);
 	align-items: center;
 	text-align: center;
 	gap: 2rem;
+	padding: 0 5%;
 	padding-bottom: 15rem;
 
 	&__image {
@@ -109,6 +111,7 @@ $gap: min(5%, 3rem);
 	align-items: center;
 	gap: 10rem;
 	background-color: $c-p-main;
+	padding: 0 5%;
 }
 
 .feature-container {
@@ -269,7 +272,7 @@ $gap: min(5%, 3rem);
 	width: 100%;
 	background-color: $c-p-intro-n-sign-up;
 	text-align: center;
-	padding: 3rem 7.5%;
+	padding: 3rem $gap;
 	border-radius: 0.5rem;
 	display: flex;
 	flex-direction: column;
@@ -324,5 +327,77 @@ $gap: min(5%, 3rem);
 		font-family: $ff-body;
 		font-weight: 600;
 		color: $c-n;
+	}
+}
+
+.footer {
+	background-color: $c-p-footer;
+	padding: 10rem 5%;
+	color: $c-n-d;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: $max-width;
+		margin: 0 auto;
+		row-gap: 2rem;
+		column-gap: 5%;
+	}
+
+	&__logo {
+		flex-basis: 100%;
+		height: 3rem;
+	}
+
+	&__column {
+		flex-grow: 1;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	&__info {
+		display: grid;
+		grid-template-columns: 3rem minmax(0, auto);
+		align-items: center;
+	}
+
+	&__icon {
+		height: 1.2rem;
+	}
+
+	&__text {
+		font-family: $ff-body;
+		max-width: 36ch;
+		overflow-wrap: break-word;
+	}
+
+	&__item {
+		font-family: $ff-body;
+	}
+
+	&__social-container {
+		display: flex;
+		gap: 1ch;
+		margin-left: auto;
+	}
+
+	&__social {
+		box-sizing: content-box;
+		height: 1rem;
+		border: 1px solid $c-n;
+		padding: 0.5rem;
+		border-radius: 50%;
+	}
+
+	&__attribution {
+		flex-basis: 100%;
+		font-family: $ff-body;
+		color: $c-n-d;
+
+		a {
+			color: $c-gr1;
+		}
 	}
 }
